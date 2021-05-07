@@ -1,0 +1,18 @@
+/*
+estructura del css
+selector {
+    propiedad: valor
+}
+
+selector: es lo que se quiere cambiar de la propiedad
+propiedad: es el estilo que quiere darse
+
+CSS selectores:
+    -selector universal * afecta todo
+    -de tipo: seleccionar por el nombre de los elementos
+    -Por clases: agregar el atributo class = "nombre de la clase" (es un atributo) y para definirlo en css se empieza con un punto
+
+*/
+.titulo-h2{
+    color: red;
+}
