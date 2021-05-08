@@ -1,0 +1,71 @@
+estructura del css
+selector {
+    propiedad: valor
+}
+
+selector: es lo que se quiere cambiar de la propiedad
+propiedad: es el estilo que quiere darse
+
+CSS selectores:
+    -selector universal * afecta todo
+    -de tipo: seleccionar por el nombre de los elementos
+    -Por clases: agregar el atributo class = "nombre de la clase" (es un atributo) y para definirlo en css se empieza con un punto
+    -Por ID se usa por # y nombre del ID
+/////////////////////////////////////////////////////////////////////////////////////////////////////
+    especificidad: jerarquía de CSS !important le gana a todo   
+    !important
+    estilos en linea
+    Identificadores
+    clases
+    pseaudo-clases
+    atributos
+    elementos
+    pseudo-elementos
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////
+    metodología BEM
+    consiste en evitar conflictos 
+    conocer las clases que estamos usando 
+    "estructura de metodología BEM"
+    class="tipo de elemento __ (2 guiones bajos) y tipo de elemento"
+    ///////////////////////////////////////////////////////////////////////////////////////////////////////
+    Medidas:
+    relativas y fijas
+
+    typografia 
+    ///////////////////////////////////////////////////////////////////////////////////////////////////////
+    propiedades de texto
+    ////////////////////////////////////////////////////////////////////////////////////////////////////////
+    normalize
+
+    ////////////////////////////////////////////////////////////////////////////////////////////////////////
+    teoría de cajas
+
+    en línea o en bloque
+    propiedades
+    a las propiedades en linea no se puede darle propiedades
+    propiedades 
+
+
+    box model:
+        -content: line-height
+        -padding: padding
+        -border: border
+        -margin: margin
+
+///////////////////
+boxshadow
+//////////////////////
+Outline
+propiedad que hace un tipo borde pero sin afectar a las demas cajas del DOM (documento Object Model)    
+border afecta el tamaño del objeto mientras que el Outline no 
+//////////////////////
+afecta el flujo que es el orden del html
+top y left tienen mas peso dentro de todo el DOM
+position:
+    Static
+    Relative: siempre conserva su atributo prioriza el top y left y adquiere el zindex
+    absolute
+    fixed
+    sticky
+    

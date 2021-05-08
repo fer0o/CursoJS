@@ -1,18 +1,76 @@
 /*
-estructura del css
-selector {
-    propiedad: valor
+.contact-form{
+    font-size: 25px;
+
 }
 
-selector: es lo que se quiere cambiar de la propiedad
-propiedad: es el estilo que quiere darse
+.contact-form__h2{
+    font-family: 'Shadows Into Light', cursive;
+    color: seagreen;
+    text-align: center;
+}
+*{
+    font-family:'Shadows Into Light', cursive;
+    font-weight: 100;
+}
+h2 {
+    background-color: seagreen;
+    display: inline-block;
+    padding: 100px;
+    box-sizing: border-box;
+    text-align: center;
+    margin: 10px;
+    border-radius: 5em;
+    border:10px solid black;
+    box-shadow: 30px 20px 30px 10px rgb(193, 201, 91);
+    text-shadow: 2px 2px 7px blue;
 
-CSS selectores:
-    -selector universal * afecta todo
-    -de tipo: seleccionar por el nombre de los elementos
-    -Por clases: agregar el atributo class = "nombre de la clase" (es un atributo) y para definirlo en css se empieza con un punto
+}
+.caja1{
+    width: 200px;
+    height: 200px;
+    background-color: red ;
+    margin: auto;
+    outline: 10px solid blue;
+
+
+}
+
+.caja2{
+    width: 200px;
+    height: 200px;
+    background-color: yellow;
+    margin: auto;
 
 */
-.titulo-h2{
-    color: red;
+*{
+    font-family:'Shadows Into Light', cursive;
+    font-weight: 100;
+    font-size: 30px;
 }
+
+
+
+div{
+    width: 120px;
+    height: 120px;
+    display: block;
+    background: darkgoldenrod;
+}
+
+.caja1{
+    background: darkorchid;
+}
+.caja2{
+    background-color: darkslateblue;
+}
+.caja3{
+    background-color: dodgerblue;
+}
+.caja4{
+    background-color: crimson;
+}
+
+
+
+
