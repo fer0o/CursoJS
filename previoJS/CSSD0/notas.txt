@@ -69,3 +69,5 @@ position:
     fixed
     sticky
     
+
+    zindex: valor para mostrar el contenido con prioridad en el eje z osea que se superpone de cualquier elemento que tenga la misma posicion
