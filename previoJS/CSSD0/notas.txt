@@ -84,14 +84,17 @@ position:
     ejemplo comentado con nagatoro linea 134-160
 
     ////pseaudo elementos/////////////
-    no es un elemento del DOM, no afecta como el Outline
+    no es un elemento del DOM,si tiene cambios visuales. muy parecido al Outline
     
-    ::first-line -> bloque
-    ::first-letter ->bloque
+    ::first-line -> block
+    ::first-letter ->block
     ::placeholder ->
     ::after-> hijos-content (necesario) -InLine
     ::before ->hijos-content (necesario) -InLine
     ::selection
+
+los pseudo elemento se crea para los otros pseudoelementos
+before y after no son parte del DOM 
 
 
     
