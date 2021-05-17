@@ -63,24 +63,6 @@ h2 {
     left: -20px;
     z-index: -1;
 }
-
-
-*/
-*{
-    font-family:'Shadows Into Light', cursive;
-    font-weight: 100;
-    font-size: 30px;
-}
-
-
-
-div{
-    width: 120px;
-    height: 120px;
-    display: block;
-    background: darkgoldenrod;
-}
-
 .caja1{
     background-color: red ;
 }
@@ -95,6 +77,127 @@ div{
 .caja4{
     background-color: crimson;
 }
+
+
+
+b{
+    width: 200px;
+    height: 150px;
+    margin: 20px;
+    border:10px solid red;
+    background: darkgoldenrod;
+    height: 400px;
+    width: 400px;
+    display: inline-block;
+}
+div{
+    margin: auto;
+    margin-top: 50px;
+    width: 320px;
+    height: 350px;
+    border:4px solid crimson;
+    background-color: rgb(205, 168, 230);
+
+}
+
+.cont{
+    margin: auto;
+    margin-top: 50px;
+    width: 320px;
+    height: 350px;
+    border:4px solid crimson;
+    background: rgb(205, 168, 230);
+    overflow: hidden;
+}
+
+.cont img{
+    width: 1000px;
+    position: relative;
+    top: 260px;
+    left: 240px;
+    outline: 2px solid teal;
+
+}
+
+.contenedor div{
+    display: inline-block;
+    width: 45%;
+}
+
+.primario{
+    background: crimson;
+}
+
+.secundario{
+    background: goldenrod;
+}
+//////////////////////////////////////////////////////////*{
+    font-family:'Shadows Into Light', cursive;
+    font-weight: 100;
+    font-size: 30px;
+}
+
+
+
+
+.cont{
+    margin: auto;
+    margin-top: 50px;
+    border: 4px solid crimson;
+    background: darkmagenta;
+    width: 50%;
+    padding: 20px;
+
+}
+.cont img{
+    float: left;
+    width: 300px;
+    height: 400px;
+    margin-right: 15px ;
+    border:4px solid black;
+
+} 
+//////////////////////////////////////////
+.texto{
+    padding: 20px;
+}
+.texto::first-line{
+    color: blueviolet;
+}
+
+
+*/
+*{
+    font-family:'Shadows Into Light', cursive;
+    font-weight: 100;
+    font-size: 30px;
+}
+form{
+    margin: 100px auto;
+    display: block;
+    background-color: crimson;
+    padding: 100px;
+    width: 50%;
+
+}
+input{
+    padding: 6px;
+    width: 100%;
+}
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

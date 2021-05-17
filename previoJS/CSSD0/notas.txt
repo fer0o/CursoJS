@@ -65,9 +65,33 @@ top y left tienen mas peso dentro de todo el DOM
 position:
     Static
     Relative: siempre conserva su atributo prioriza el top y left y adquiere el zindex
-    absolute
-    fixed
+    absolute: 
+    fixed: posicionamiento fijo no importa si se mueve 
     sticky
     
 
     zindex: valor para mostrar el contenido con prioridad en el eje z osea que se superpone de cualquier elemento que tenga la misma posicion
+    /////////////////////////////////////////////////////////////////
+    display:
+    in-line: no se les puede modificar la resoluición 
+
+    overflow:sobrante sorthunt properti
+
+
+    //////////////////////////////////
+    float
+    maquetación con float ya no se ve mas, sirve para hacer imagenes con descripción principalemente.
+    ejemplo comentado con nagatoro linea 134-160
+
+    ////pseaudo elementos/////////////
+    no es un elemento del DOM, no afecta como el Outline
+    
+    ::first-line -> bloque
+    ::first-letter ->bloque
+    ::placeholder ->
+    ::after-> hijos-content (necesario) -InLine
+    ::before ->hijos-content (necesario) -InLine
+    ::selection
+
+
+    
