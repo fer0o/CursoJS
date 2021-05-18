@@ -220,16 +220,7 @@ b::after{
     background-color: blueviolet;
     background-image: url("https://i1.wp.com/elpalomitron.com/wp-content/uploads/2020/07/anime-Ijiranaide-Nagatoro-san-destacada-El-Palomitr%C3%B3n.jpg?resize=1200%2C600&ssl=1");
   }
-
-
-
-
-*/
-*{
-    font-family:'Shadows Into Light', cursive;
-    font-weight: 100;
-    font-size: 30px;
-}
+-----------------explicación hover------------------
 .caja1{
     width: 200px;
     height: 200px;
@@ -241,6 +232,24 @@ b::after{
     height: 300px;
     background: blue;
     
+}
+-----------------------------------------------------
+
+
+
+
+*/
+*{
+    font-family:'Shadows Into Light', cursive;
+    font-weight: 100;
+    font-size: 30px;
+}
+.caja1{
+margin: 30px;
+display: block;
+}
+.caja1:link{
+color: crimson;
 }
 
 
