@@ -96,5 +96,60 @@ position:
 los pseudo elemento se crea para los otros pseudoelementos
 before y after no son parte del DOM 
 
+placeholder: para poner dentro del input un mensaje que se eliminara cuando se llene el campo
+esta funcion se le pueden dar atributos. En el ejemplo se le dio el atributo de color tanto como el campo de texto como de la letra. Todo esto cambia cuando se introduce texto
+-----ejemplo------------------|
+input::placeholder{            
+    color: chartreuse;
+    background-color: black; 
+}
+------------------------------|
+
+selection:
+esta funcion es para cuando se seleccione o sombree una parte del texto cambie dependiendo las propiedades que se le den
+en este ejemplo se uso un texto lorem y con un selector de <p>lorem</p> que se sombree de color negro con texto verde
+p{
+    padding: 6px;
+    width: 100%;
+}
+p::selection{
+    color: chartreuse;
+    background-color: black;
+}
+esta propiedad es inline, por lo cual no se pueden hacer muchos cambios en cuanto a su transformación 
+
+--------------------------------------------
+Before y after
+propiedad que no es del DOM, se va a declarar dentro de la hoja de estilos y aparecera ciertas caracteristicas de esa funcionalidad 
+
+funciona con elementos inline como en bloque
+--------ejemplo-------------------
+b{
+    padding: 6px;
+    width: 100%;
+}
+b::before{
+
+    content: " me suscribi  ";
+    color: aliceblue;
+}
+b::after{
+    content: "ventaneando";
+    color: coral;
+
+}
+---------pseudo clases-------------------
+Escuchan un evento 
+las mas comunes:
+    hover: Escucha el evento cuando el mouse esta por encima del elemento
+    link:
+    visited:
+    active:
+    focus:
+    lang:
+
+
+
+
 
     
