@@ -177,11 +177,67 @@ las mas comunes:
     ------------------------
 
     link: sirve para dar los enlaces y marca los enlaces no visitados
+    con esta propiedad cuando ya se ha visitado un link se marca se puede marcar de un cierto color
+    y para carle un color a los links que aun no visitamos es con la propiedad :visited
+    -------------ejemplo-------------------------------
+.caja1:link{
+    color: crimson;
+    }
+.caja1:visited{
+    color: chocolate;
+}
+en .caja1:link tiene las propiedades de marcar de color carmesí los links que aún no están visitados
+y con la propiedad de visited esta declarada que cada enlace que ya fueron visitados en algún momento estan de color chocolate
+
+nivel de especificidad afecta
+
     
     ------------------
-    visited:
-    active:
-    focus:
+    
+    active: Al dejar apretado un boton cambias los estilos
+    esta propiedad se le pueden dar mas estilos un ejemplo es es el de transition o tamaño.
+    ----------------------ejemplo------------------------------------
+    .caja1{
+width: 300px;
+height: 300px;
+background: crimson;
+margin: 25px;
+}
+
+.caja1:active{
+    background: teal;
+    transition: 2s;
+}
+se crea una propiedad caja1{
+    ccon un tamaño de 300 x 300 y un color carmesí 
+}
+cuando se le da la de active es que cuando se le da un click al cuadrado cambia de color por el contenido de  .caja1:active{
+    qye tiene un color como verde y tiene una transision de 2 seg, es decir que cambia de color en ese tiempo
+}
+------------------------------------
+    focus: El focus es como cambia una propiedad solamente cuando esta enfocada, es decir que se cuando tiene alguna funcionalidad especial que requiera que el usuario tenga que usuarioun input, form etc que el usuario interactue va a cambiar
+    o se va a modificar.
+--------------------------------ejemplo focus---------------------------
+.caja1{
+width: 300px;
+height: 300px;
+background: crimson;
+margin: 25px;
+}
+en html tiene declarado un input, este elemento es donde se va a hacer el focus cuando el usuario lo necesite, en caso de usarlo el elemento va a cambiar
+la caja1 que tiene la propuedad de un cuadrado va a cambiar.
+.caja1:focus{
+    background: teal;
+    transition: 2s;
+    width: 600px;
+    height: 400px;
+}
+al hacer click para el input el cuadrado va a hacerse grande y va a cambiar de color con una transicion de 2 s
+---------------------------------------------------------------------
+
+
+
+
     lang:
 
 

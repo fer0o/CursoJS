@@ -233,7 +233,44 @@ b::after{
     background: blue;
     
 }
+-----------------------ejemplo link y visited --------------
+.caja1:link{
+color: crimson;
+}
+.caja1:visited{
+    color: chocolate;
+}
+-------------------explicación active------------------------
+.caja1{
+width: 300px;
+height: 300px;
+background: crimson;
+margin: 25px;
+}
+
+.caja1:active{
+    background: teal;
+    transition: 2s;
+}
+
+
 -----------------------------------------------------
+-------------------------explicacion focus---------
+.caja1{
+width: 300px;
+height: 300px;
+background: crimson;
+margin: 25px;
+}
+
+.caja1:focus{
+    background: teal;
+    transition: 2s;
+    width: 600px;
+    height: 400px;
+}
+-----------------------------------------------------
+
 
 
 
@@ -245,12 +282,19 @@ b::after{
     font-size: 30px;
 }
 .caja1{
-margin: 30px;
-display: block;
+width: 300px;
+height: 300px;
+background: crimson;
+margin: 25px;
 }
-.caja1:link{
-color: crimson;
+
+.caja1:focus{
+    background: teal;
+    transition: 2s;
+    width: 600px;
+    height: 400px;
 }
+
 
 
 
