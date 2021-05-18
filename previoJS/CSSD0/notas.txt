@@ -233,14 +233,72 @@ la caja1 que tiene la propuedad de un cuadrado va a cambiar.
     height: 400px;
 }
 al hacer click para el input el cuadrado va a hacerse grande y va a cambiar de color con una transicion de 2 s
+
+
+focus se puede usar mucho en forms con inputs para poder saber cuando hay que escribir con un transition de color
 ---------------------------------------------------------------------
 
 
 
 
-    lang:
+    lang: lang es una funcion y requiere de un parametro en que lenguaje quieres modificar el mensaje
+    -----------------------------ejemplo----------------------------
+
+.caja1 b:lang(es){
+    background-color: tomato;
+    padding: 20;
+
+}
+aqui en el lang el parametro que seleccioné es "es" que es para español y que lo reconozca dentro del html en <b></b> se declara el lang y el parametro para que se identifique que es
+cuando lo detecta lo cambia dependiendo que es lo que se le haya declarado
+.caja1 b:lang(jp){
+    background-color: violet;
+    padding: 20;
 
 
+--------------------------------------------------------------------------------------------------------------------------------------------------
+------------------------------------------Object-Fit---------------------------------------------------------------------------------------------
+Estas se usarn principalmente para imagenes
+problemas que soluciona  
+
+principales para revisar
+Contain:
+ Con esta propiedad la imagen se va a ajustar a el contenedor sin distorcionar la imagen, en este ejemplo 
+la imagen tiene una resolución de 1084 x 1111 es una imagen grande. Pero el div contenedor tiene un tamaño de 200 x 600, sin el object-fit: contain; la imagen se distorciona y queda aplastada en lo ancho
+con esta propiedad lo que hace es que la imagen agarra las medidas y escala la imagen para que se vea con contenido completo en el div contenedor.
+--------------------------ejemplo-----------------------------------------------
+.caja1{
+
+margin: 25px;
+width: 200px;
+height: 600px;
+}
+div contenedor tiene una dimension de 200 de ancho x 600 de alto
+
+.caja1 img{
+    width: 100%;
+    height: 100%;
+    border: teal 5px solid;
+    object-fit: contain;
+}
+cuando le damos la propiedad de contain la imagen se muestra como completa ajustada en la ventaneando
+----------------------------------------------------------------------------
+None:
+Scale-Down:
+
+
+Object-Position:
+left
+Right
+Top
+Button
+PX
+EM
+%
+ETC
+
+
+}
 
 
 
