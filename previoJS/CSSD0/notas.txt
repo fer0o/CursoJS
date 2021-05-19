@@ -283,9 +283,32 @@ div contenedor tiene una dimension de 200 de ancho x 600 de alto
 }
 cuando le damos la propiedad de contain la imagen se muestra como completa ajustada en la ventaneando
 ----------------------------------------------------------------------------
-None:
-Scale-Down:
+----------------------------------cover-------------------------------------
+Cover:
+Con esta propiedad la imagen que tengas se va a ajustar a las dimensiones que tenga el contenedor, la imagen la va a ajustar sin perder la resolucion
+...............................ejemplo........................................
+.caja1{
 
+margin: 25px;
+width: 360px;
+height: 600px;
+}
+se modificó el ancho del contenedor div para hacerlo mas estrecho, con esto sería un rectangulo en vertical que es mas chico que la resolución de la imagen
+
+.caja1 img{
+    width: 100%;
+    height: 100%;
+    border: teal 5px solid;
+    object-fit: cover;
+}
+con la propiedad object-fit: cover se ajusta el tamaño de la imagen recortando los bordes para ajustarse al contenedor
+-----------------------------------------------------------------------------
+None: agarra las propiedades originales de la imagen, no importa el tamaño del contenedor y pone el cacho de imagen que debe ser en esa posicion, si la imagen es muy grande solo aparecera esa parte
+si la imagen es muy pequeña lo va a poner con el tamaño de la imagen, dejando bordes en el contenedor.
+-----------------------------------------------------------------------------------
+Scale-Down: agarra el valor del contenedor o de la imagen con el valor mas bajo
+--------------------------------------------------------------------------------------
+Todas estas son para la modificacion de imagenes y se muevan a determinado lugar o determinada distancia
 
 Object-Position:
 left
@@ -296,10 +319,61 @@ PX
 EM
 %
 ETC
+-------------------------------------------------------------------------------------------
+...........................................................................................
+..........................................cursores.........................................
+es cambiar el diseño del cursor dentro de un determinado objeto
+puede ser util cuando en cierto lado se tienen otras funcionalidades como copy, scroll, progress
 
+.........................................colores.............................................
+rgb
+red, blue, green
+(0,0,0) negro
+(255,255,255) blanco
+intermedios de todos es gris
+rgba
+red green blue alpha (opacidad)
+ no hay código todo fue teoría
+ .................................................................................................
+ .....................................Responsive design Mobile First..............................
+ Concepto que trabaja con las diferentes resoluciones
 
+media querty
+
+!!!!importante a estudiar para react, re hacer pagina o buscar como hacer esa parte de la imagen!!!!!!!
+los media queries sirven para que la pantalla se haga resposive con el contenido que muestra en pantalla
+--------------------ejemplo---------------------------------
+div{
+    width: 49%;
+    display: inline-block;
+    padding: 20px;
+    background-color: #ddd;
+}
+div mostrando cuadrados color gris con un porcentaje de 49% se muestran en linea con un padding del inicio de 20px
+h1{
+    font-size: 24px;
 }
 
+.caja2{
+    background: #bbb;
+}
+
+@media only screen and (max-width: 800px) {
+    div{
+        display: block;
+        width: 100%;
+    }
+    h1{
+        font-size: 20px;
+    }
+}
+
+aqui se declara la resolucion de la pantalla. con el media querty se le da la propiedad que cuando la resolucionde la pantalla es de 800px todo el contenido de los divs 
+pase para abajo del primer elemento adaptando todo el contenido dentro de buen forma y no perdiendo información
 
 
-    
+-----------------------------------------------------Practica menu responsive sin JS----------------------------------------------------------------------------
+
+
+
+
