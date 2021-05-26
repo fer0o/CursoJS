@@ -376,4 +376,136 @@ pase para abajo del primer elemento adaptando todo el contenido dentro de buen f
 
 
 
+*{
+    font-family:'Shadows Into Light', cursive;
+    font-weight: 100;
+    font-size: 30px;
+}//////////////////////////////////////////////
+.nav__responsive-ul{
+    display: none;
 
+}
+no se muestra nada de los divs de responsive-ul
+//////////////////////////////////////////////////////////
+.nav{
+    background-color: rgb(1, 155, 245);
+}
+color de fondo del nav 
+/////////
+.nav__li{
+    display: inline-block;
+    padding: 9px;
+    color: crimson;
+}
+ropiedades inline de la lista para desplegarse como menu 
+padding de 9 entre elementos
+letra color crimson
+////////
+.nav__li:hover > a{
+    color: darkmagenta;
+}
+propiedad hover en elementos a para mostrar los enlaces de elemenyo <a></a> en color darkmagenta cuando se le pase el cursor por encima y se le de click al enlace 
+
+//////////
+.nav__li:hover{
+    color: darkmagenta;
+}
+hover para cambio de color a darkmagenta cuando se le pase el cursor por encima
+//////////////
+.nav__li a{
+    color: crimson;
+    text-decoration: none;
+}
+lista en a color de letra crimson y sin decoración 
+/////////////////
+
+.nav__li i{
+    box-sizing: border-box;
+    text-align: right;
+    margin-right: 5px;
+    
+}
+lista de iconos tamaño en box-sizing: border-box pegados a la derecha y margen de 5px entre icono y elemento de lista 
+////////////////////
+
+.nav__responsive-button-container{
+position: absolute;
+width: 100%;
+font-size: 25px;
+background-color: darkcyan;
+margin-top: -64px; 
+z-index:100 ;
+
+}
+elemento del nav cuando es responsive posiscion absolute, tamaño de elementos de 25px tamaño 100% para obtener el ancho de la nav y se muestre el contenido
+-66px de margintop para acomodo y calculo 
+z-index para animación de que esta apareciendo por atras del nav
+////////////////////////////////////
+.nav__responsive-button{
+    padding: 6px 20px;
+    text-align: right;
+    width: 100%;
+}
+boton responsive alineación necesaria para que aparezca en el nav en responsive
+/////////////////////////
+
+@media only screen and  (max-width:610px){
+    .nav__ul{
+        display: none;
+    }
+    media para hacer el cambio de menu de desktop a responsive cuando el tamaño llege a 600px con la condición que si no llega a esa resolución no hacer nada
+    ////////////////////////////
+    .nav{
+        height: 37px;
+        width: 100%;
+    }
+    menú se adapta a esa resolución
+    /////////////////////////////////
+    .nav__responsive-ul{
+        display: block;
+        position: absolute;
+        width: 100%;
+        margin-top: 37px;
+        padding-top: 27px;
+        height: 37px;
+}
+nav responsivo se bloquea el menú, posición absolute con dimenciones adecuadas para el responsive y variando en los 600px
+/////////////////////////////////
+.nav__li-container{
+    position: relative;
+    top: -1000px;
+    height: calc(100vh - 64px);
+    background-color: cornflowerblue;
+    transition: all 1s;
+    z-index: 1;
+    width: 75%;
+    padding-top: 27px;
+}
+
+//////////////
+.nav__responsive-li{
+    width: 100%;
+    padding: 9px 20px;
+}
+
+.nav__responsive-li i{
+    box-sizing: border-box;
+    text-align: center;
+    margin-right: 5px;
+    width: 30px;
+    color: #016;
+
+}
+.nav__responsive-li a{
+    color: #016 ;
+    text-decoration:none;
+    
+}
+.nav__responsive-ul:hover > .nav__li-container{
+    top: -27px;
+
+
+    }
+
+
+}
