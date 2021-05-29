@@ -509,3 +509,189 @@ nav responsivo se bloquea el menú, posición absolute con dimenciones adecuadas
 
 
 }
+////////////////////////////////////////////////////////////////////////////////
+                        Flexbox
+////////////////////////////////////////////////////////////////////////////////
+
+
+antes se maquetaban los sitios web con floats y tablas
+ahora se usan grid y Flexbox
+
+
+flex container: contener los item por el contenedor flex 
+flex item:
+coss axis -eje y:{cross-start cross-end}
+
+
+
+main axis -eje x :{ tiene un main-start  y un main-end}
+
+todo lo que se trabaja con flexbox es con direcciones
+
+
+con flexbox se adaptan los contenidos 
+
+
+-----------------------ejemplos de flex---------------------
+.flex-container{
+display: flex;
+}
+posicionar 2 eleemntos uno alado de otro dentro del container
+----------------
+.flex-item{
+    background-color: teal;
+    color: #fff;
+    padding: 10px;
+    margin: 10px;
+}
+elementos dentro del container con propiedades de color teal letras blancas, margen y separación entre ellas de 10px
+------------------
+Se puede cambiar la dirección del main-axis con el flex direction
+propiedades que se aplican al contenedor y afectan a los items pero se aplican al contenedor
+
+propiedades de flexbox
+
+Contenedor y contenidoflex container -Flex item
+Main Axis( Main-Start - Main_end)
+Cross Axis (Cross-Start - Cross-End)
+
+-------------Propiedades-----------
+Flex-direction:{
+    flex-direction:row--> esta propieda adapta lo del contenedor en una fila 
+    flex-direction: column --> esta propueda adapta el contenido del contenedor en una columna esta en el eje y
+    flex-direction: row-reverse --> con esta propieda se da un movimiento espejo, se taslada al otro extremo de la pantalla, es decir que se da una rotación en profundidad
+    flex-direction: column-reverse --> lo mismo que row pero en columna
+
+
+}
+
+Flex_Wrap: No-Wrap -Wrap Wrap-reverse
+Felx-Flow: 
+    flex-direction: con esta propiedad se le da la orientación de los objetos del container. se puede dar en row o colun y cambiará dependiendo lo selecionado. cabe acalrar que si se encoje la resolución de la pantalla estos items solo se achican
+    flex-Wrap: con esta propiedad los items dentro del container se modifican si es que la resolución de la natalla cae por debajo de ciertos pixeles lo que haya enm el extremo de la pantalla ira por debajo del container
+
+
+
+Justify-Content: center: se centra el contenido, space-arround: lo mismo que pasa con el margin auto, solo que tambien funciona como un space between en vertical pero como el height del flex-container es igual de alto que los flex-items, no lo notamos, 
+space between: darle un amrgen automatico al contenido del contenedor,
+ space-eventlty (main axis)
+
+Aling-items: flex-start, center: centra de manera vertival en el DOM , flex-end: lo pone al final de la pag , strech: estirar los elementos del contenedor a lo largo del cross axis, baseline (cross axis)
+
+se ajustan arriba centro y final con el baseline iniciando desde abajo.
+
+-------------------------------------------propiedades de lso items------------------------------------------------------------
+flex items
+
+Aling-self: center alinea el item en el centro del DOM 
+            flex-end: al final de la página. Hasta abajo
+            flex-start: al inicio pero al final del container
+            flex-grow: es el espacio asignado a cada uno. Cuando se le da un tamaño al flex grow todos los contenidos del container se van a adaptar con el tamaño del item con el flexgrow con tamaño asignado.
+            flex-basis: cuando se le asigna un tamaño estandar al basis respeta mas ese tamaño y le da mas dimensiones a el que a todos los que estan en el container.
+            flex-shrink: decide que tamaño va a ocupar cada item, el tamaño de los items siempre va a tener un tamaño configurado y todos los items dentro del container llegar al tamaño al mismo tiempo.
+            el tamaño de los items va a empezar a crecer o a tomar las propiedades siempre y cuando el item al que se le da al shrink cumpla con la medida que se esta específicando.
+            Ele ejemplod de las cajas es de 3 cajas a la caja 1 con un shrink de 0 y un flex-basis de 350px. cuando la caja dentro del DOM llegue a su tamaño de 350px el tamaño de las cajas laterales va a crecer. de otra forma la caja uno con el tamaño espécifico se va a quedar con mayor proporcion frente a las otras
+
+--------------------------------------------------------------------------------------------------------------------------------------
+-------------------------------------------practica de flex---------------------------------------------------------------------------
+*{
+    font-family:'Shadows Into Light';
+    font-weight: 100;
+}
+.flex__container{
+display: flex;
+align-items: center;
+flex-wrap: wrap;
+justify-content: center;
+background: #333;
+margin: 50px 50px;
+padding: 20px;
+border: 20px solid #000;
+outline: 4px solid #05d;
+
+}
+
+body{
+    background-color: black;
+}
+.form{
+    min-width: 400px;
+    flex: 1 ;
+    text-align: center;
+    padding: 30px;
+    order: 5;
+}
+.form__input{
+    width: 100%;
+    padding: 7px;
+    margin: 6px 0;
+    border: none;
+    border-bottom: 3px solid #05d;
+    background: transparent;
+    color: #fff;
+    order: 2;
+
+}
+.form__input:focus{
+    background: linear-gradient(to bottom, transparent, #111);
+    outline: none;
+    border-bottom: 3px solid crimson;
+}
+
+.form textarea{
+    min-height: 140px;
+    resize: none;
+}
+.form-imagen{
+    flex: 1;
+    display: flex;
+    padding: 10px;
+    min-width: 300px;
+    max-width: 400px;
+    order: 2;
+    
+}
+.form-imagen div{
+    padding: 10px;
+    border-radius: 50%;  
+}
+
+.img-container{
+    padding: 20px;
+    margin: auto;
+    
+    
+}
+.img-container div{
+    background-color: #fff;
+    text-align: center;
+    padding: 40px;
+
+}
+
+.form-imagen img{
+    width: 90%;
+    margin: auto;
+
+
+    
+
+}
+.form input[type="submit"]{
+    background-color:#05d ;
+    border-bottom: none;
+    padding: 12px;
+}
+.form input[type="submit"]:hover{
+    background-color:rgb(5, 172, 172) ;
+    border-bottom: none;
+    padding: 12px;
+}
+
+.form input[type="submit"]:focus{
+    background:rgb(12, 65, 151) ;
+}
+.form input[type="submit"]:active{
+    background: linear-gradient(to bottom, rgb(3, 66, 161),#05d);
+}
+

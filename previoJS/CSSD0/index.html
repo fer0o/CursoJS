@@ -1,4 +1,4 @@
-    <!--  Maquetación float naga
+<!--  Maquetación float naga
 <div class="cont">
     <img src="https://static.wikia.nocookie.net/please-dont-bully-me-nagatoro/images/a/ae/Nagatoro.jpg/revision/latest?cb=20200322081952">
 </div>
@@ -102,53 +102,104 @@ solo se necesita el url de la imagen
 
 </body>
 </html>
+-------------------------------ejemplo basico de flex-----------------------------------
+<div class="flex-container">
+    <div class="flex-item">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam voluptatum alias voluptas? Dolores fugiat provident quis a consectetur eius distinctio itaque est. Voluptate qui laboriosam quod tempore nihil vitae aliquid?
+    </div>
+    <div class="flex-item">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt itaque excepturi quia maiores aperiam laborum distinctio enim dignissimos minus inventore sunt odio laudantium, id eaque, consequuntur saepe cumque nostrum. Rerum.
+    </div>
+</div>
+------------------------------------trabajar con flex items-----------------------------------------------------------
+mas teoría que practica 
+-----------------------------------------------------------------------------------------------------------------------
+<div class="flex-container">
+    <div class="flex-item crim"> Texto flexible 1
+    </div>
+    <div class="flex-item"> Texto flexible 2
+    </div>
+    <div class="flex-item"> Texto flexible 3
+    </div>
+    <div class="flex-item "> Texto flexible 4
+    </div>
+    <div class="flex-item "> Texto flexible 4
+    </div>
+    <div class="flex-item gre"> Texto flexible 4
+    </div>
+    
+</div>
 
+---------------------------------------------------------práctica con flex haciendo un formulario ------------------------------------------------------
+   <div class="flex__container">
+      <form class="form">
+        <div class="form__section" >
+          <input type="email" class="form__input" placeholder=" Escriba su Email" />
+        </div>
+        <div class="form__section">
+          <input type="text" class="form__input" placeholder="Escriba su asunto" />
+        </div>
+        <div class="form__section">
+          <textarea class="form__input" placeholder="Escriba su mensaje"></textarea>
+        </div>
+        <div class="form__section">
+            <input type="submit" class="form__input">
+        </div>
+      </form>
+      <div class="form-imagen">
+          <div class="img-container">
+              <div>
+                <img src="http://i.ya-webdesign.com/images/black-envelope-png-icon-1.png" >
+              </div>
+          </div>
+      </div>
+    </div>
+    --------------------------------------------------------------------------------------------------------------------------------------------------
 
 -->
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Aprendiendo CSS</title>
-    <link rel="stylesheet" type="text/css" href="estilo.css">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="normalize.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://kit.fontawesome.com/62ea397d3a.js" crossorigin="anonymous"></script>
-                 
-</head>
-<body>
-<header>
-    <nav class="nav">
-        <ul class="nav__ul">
-            <li class="nav__li"><i class="fas fa-home"></i><a href="#"> Inicio </a></li>
-            <li class="nav__li"><i class="fas fa-address-card"></i><a href="#"> About </a></li>
-            <li class="nav__li"><i class="fas fa-money-bill-wave-alt"></i><a href="#"> Gana dinero </a></li>
-            <li class="nav__li"><i class="fas fa-question-circle"></i><a href="#"> Ayuda </a></li>
-        </ul>
-        
-            <ul class="nav__responsive-ul">
-                <div class="nav__responsive-button-container">
-                    <div class="nav__responsive-button"><i class="fas fa-bars"></i></div>
-
-                </div>
-                
-                <div class="nav__li-container">
-                <li class="nav__responsive-li"><i class="fas fa-home"></i><a href="#"> Inicio </a></li>
-                <li class="nav__responsive-li"><i class="fas fa-address-card"></i><a href="#"> About </a></li>
-                <li class="nav__responsive-li"><i class="fas fa-money-bill-wave-alt"></i><a href="#"> Gana dinero </a></li>
-                <li class="nav__responsive-li"><i class="fas fa-question-circle"></i><a href="#"> Ayuda </a></li>
-            </ul>
+    <link rel="stylesheet" type="text/css" href="estilo.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" type="text/css" href="normalize.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/62ea397d3a.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="flex__container">
+      <form class="form">
+        <div class="form__section" >
+          <input type="email" class="form__input" placeholder=" Escriba su Email" />
         </div>
-        
-
-    </nav>
-</header>
-
-
-
-</body>
+        <div class="form__section">
+          <input type="text" class="form__input" placeholder="Escriba su asunto" />
+        </div>
+        <div class="form__section">
+          <textarea class="form__input" placeholder="Escriba su mensaje"></textarea>
+        </div>
+        <div class="form__section">
+            <input type="submit" class="form__input">
+        </div>
+      </form>
+      <div class="form-imagen">
+          <div class="img-container">
+              <div>
+                <img src="http://i.ya-webdesign.com/images/black-envelope-png-icon-1.png" >
+              </div>
+          </div>
+      </div>
+    </div>
+  </body>
 </html>
