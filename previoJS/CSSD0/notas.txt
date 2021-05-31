@@ -694,4 +694,26 @@ body{
 .form input[type="submit"]:active{
     background: linear-gradient(to bottom, rgb(3, 66, 161),#05d);
 }
+------------------------------Conceptos básicos de Grid--------------------------------
+Valor de la propiedad de display 
+Sistema de cuadriculas
+Grid container: Es el contenedor completo igual qie el flex container
 
+Grid item: cualquier elemento dentro del grid container es un item. Son los que son hijos directos del contenedor
+
+Grid cell :
+
+Grid tracks (column y Row): la suma de las columnas y las filas  
+
+Grid Area : las areas las define el usuario a la hora de la maquetacion. las areas tienen que ser consecutivas tanto horizontal como verticalmente
+ 
+
+Grid Line (column y Row line):
+
+----------------------------Propiedades-------------------------------------------
+Grid template rows (Grid Container)
+grid-template-columns (Grid Container)
+
+Grid-row-gap (Grid Container)
+Grid-column-gap(Grid-container)
+Grid-gap: row column (Grid container)
