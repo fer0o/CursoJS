@@ -708,12 +708,37 @@ Grid tracks (column y Row): la suma de las columnas y las filas
 Grid Area : las areas las define el usuario a la hora de la maquetacion. las areas tienen que ser consecutivas tanto horizontal como verticalmente
  
 
-Grid Line (column y Row line):
+Grid Line (column y Row line): son todas las lineas sean horizontal y vertical del container se empieza del extremo con el numero 1 y asi se van contando 
 
 ----------------------------Propiedades-------------------------------------------
-Grid template rows (Grid Container)
+Grid template rows (Grid Container) : cuantas filas quieres que haya 
 grid-template-columns (Grid Container)
+se puede cambiar el tamaño de las fials y las columnas definiendolo comp atributo de la propiedad
+unidades "auto" y fr 
+
+
 
 Grid-row-gap (Grid Container)
 Grid-column-gap(Grid-container)
+Distancia que hay entre una celda a un item   
+
 Grid-gap: row column (Grid container)
+
+
+grid-row-start(grid-item)
+grid-row-end (grid-item)
+grid-column-start(grid-item)
+grid-column-end (grid-item)
+grid-row (grid-item)
+grid-column (grid-item)
+
+unidades "auto" y fr 
+repeat (cantidad, tamaño/s)
+
+-------------------------------------Grid implicito y explicito-----------------------------------------------------
+3 nuevas propiedades del grid implicito
+
+grid-auto-rows (Igual que el template)
+grid-auto-columns (igual que el template)
+grid-auto-flow: Row (Default). column y dense 
+
