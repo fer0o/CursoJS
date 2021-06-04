@@ -630,7 +630,8 @@ body{
 }
 .grid-item:first-child{
     background: #900;
-    grid-column: 1 / 2;
+    grid-column: 3 / span 3;
+    grid-row: 1/span 2;
 }
 
 
