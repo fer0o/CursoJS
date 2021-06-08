@@ -720,9 +720,11 @@ unidades "auto" y fr
 
 Grid-row-gap (Grid Container)
 Grid-column-gap(Grid-container)
-Distancia que hay entre una celda a un item   
+Distancia que hay entre una celda a un item esto funciona como para separar cuadros para un catalogo
+
 
 Grid-gap: row column (Grid container)
+cuando se utiliza esta propiedad se declara desde donde va a abarcar el tamaño del elemento. se hace con el comando grid-column: desde donde empieza 1 / 3 donde termina
 
 
 grid-row-start(grid-item)
