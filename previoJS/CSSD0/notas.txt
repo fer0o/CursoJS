@@ -737,10 +737,21 @@ grid-column (grid-item)
 unidades "auto" y fr 
 repeat (cantidad, tamaño/s)
 
+
 -------------------------------------Grid implicito y explicito-----------------------------------------------------
+si hay una grilla de más se crea con propiedades de grid implicito, es decir que tiene propiedadesd diferentes a las que ya estan programadas
+
 3 nuevas propiedades del grid implicito
 
 grid-auto-rows (Igual que el template)
 grid-auto-columns (igual que el template)
 grid-auto-flow: Row (Default). column y dense 
+por defecto se crea como una fila 
+
+cuando se declara un grid-auto (row o column ) con esto se le da el atributo para que si se llegan a programar mas implicitamente tengan un tamaño establecido
+
+con grid-auto-flow: dense lo que hace es que si se crean propiedades que no estan dentro de la grilla los rellena evitando espacios muertos o vacios
+
+con el grid-auto-flow: column o row es que es el valor que va a agarrar implicito si hay un valor extra va a ser columna o fila
+
 
