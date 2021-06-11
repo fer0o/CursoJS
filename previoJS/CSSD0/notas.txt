@@ -755,3 +755,28 @@ con grid-auto-flow: dense lo que hace es que si se crean propiedades que no esta
 con el grid-auto-flow: column o row es que es el valor que va a agarrar implicito si hay un valor extra va a ser columna o fila
 
 
+minmax darle tamaños en los que crece y donde ya no debe de encogerse
+
+auto-fill se llena la grilla del container
+auto-fit se adapata a la grilla del container
+
+diferencia con flex
+la alineacion es dentro de cada celda y no alineación total del flex del container
+cada celda seria un "flex container"
+
+
+solo el space-arround, between, evenly solo funciona con el contenido del contenedor y no para los items
+
+-----------------------------------------------------------------------------------------------------------
+propiedades para los grid items
+align-self
+justify-self
+stretch
+order igual que en flex mayr order mas abajo se acomoda menor order mas arriba se posiciona
+
+
+align-self: start 
+se centra pero solo aplica para los items esto ya no se afecta al contenedor
+justify-self: igual que el que el align-self
+
+
