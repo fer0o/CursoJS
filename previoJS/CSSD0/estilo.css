@@ -604,13 +604,11 @@ body{
 }
 
 -------------------------------------------------------------------------------------------------------------------------------------------
-----------------------------------------------------GRID------------------------------------------------------------------------------------
-*/
+----------------------------------------------------GRID- Area----------------------------------------------------------------------------------
 *{
     font-family:'Shadows Into Light';
     font-weight: 100;
-    color: #fff;
-    font-size: 30px;
+    font-size: 25px;
 }
 
 body{
@@ -618,29 +616,251 @@ body{
     padding: 15px;
 }
 .grid-container{
+    background: #444;
+    margin: 10px;
     display: grid;
-    grid-template-columns: repeat(3, 1fr)  ;
-    grid-template-rows: repeat(3,150px);
-    grid-auto-rows: 1fr;
-    grid-auto-columns: 1fr;
-    border: 3px solid crimson;
-    background-color: #333;
-    grid-auto-flow: dense;
+    grid-template-areas: 
+    "header header header"
+    "aside main main"
+    "aside main main"
+    "aside main main"
+    "aside main main"
+    "footer footer footer";
+    grid-template-rows: repeat(auto-fill,1fr);
+    height: 90vh;
+    border: 5px solid #000;
+
+}
+
+
+ul li{
+    display: inline-block;
 }
 .grid-item{
-    border:1px solid #000;
-    background-color: #999;
+    padding: 20px;
+}
+.grid-footer{
+    background-color: #6f9;
+    grid-area: footer;
+
+}
+.grid-header{
+    background-color:#f96 ;
+    grid-area: header;
+}
+.grid-main{
+    background-color: #96f;
+    grid-area: main;
+
+}
+.grid-aside{
+    background-color: #888;
+    grid-area: aside;
+}
+
+-----------------------------------------------------------Estructura basica responsive------------------------------------------------
+body{
+    background-color: blue;
+    
+}
+
+.header, .main, .aside, .footer{
+    padding: 20px;
+}  
+.content{
+display: flex;
+flex-direction: column;
+height: 100vh;
+}
+.header{
+    background-color:aqua;
+    color: white;
+    flex-basis: 60px;
+    border: 1px solid black;
+}
+.main{
+    background: slateblue;
+    color: white;
+    flex-basis: 300px;
+    flex-grow: 2;
+    flex-shrink: 0;
+    border: 1px solid black;
+}
+.aside{
+    background: darkmagenta;
+    color: white;
+    flex-basis: 200px;
+    flex-grow: 1;
+    flex-shrink: 0;
+    border: 1px solid black;
+}
+.footer{
+    background: teal;
+    color: white;
+    flex-grow: 1;
+    border: 1px solid black;
 }
 
 
+@media screen and (min-width: 900px){
+    .content{
+        display: grid;
+        grid-template-rows: 80px 1fr 1fr 1fr 1fr 80px;
+        grid-template-columns: repeat(3,1fr);
+        
+    }
+    .header{
+        grid-column: 1/ span 3;
+       
+    }
+
+    .main{
+        grid-row: 2 / 6;
+        grid-column: 1 / span 2;
+        
+    }
+    .aside{
+        grid-row: 2/6;
+        
+    }
+        
+    
+    .footer{
+        grid-row:  6/7;
+        grid-column: 1/span 3;
+    
+    }
+    
+}
+-------------------------------------Transitions---------------------------------------------
 
 
 
 
+.container{
+     background: purple;
+     padding: 20px 5px;
+
+}
+.caja{
+    background:crimson;
+    border: 1px solid black;
+    height: 100px;
+    width: 100px;
+    margin: 30px;
+    transition-property: left, background;
+    transition-duration: 3s, 1s;
+    position: relative;
+    left: 0;
 
 
+ 
+}
+
+.container:hover > .caja{
+    background: turquoise;
+    left: 80%;
+}
+.caja:first-child{
+    transition-timing-function:linear ;
+
+}
+
+.caja:nth-child(2){
+    transition-timing-function: ease;
+
+}
+.caja:nth-child(3){
+    transition-timing-function: ease-in;
+
+}
+.caja:nth-child(4){
+    transition-timing-function: ease-out;
+    
+}
+.caja:last-child{
+    transition-timing-function: ease-in-out;
+
+}
+--------------------------------------------------------
+---------------------------transform---------------------
+*{
+    font-family:'Shadows Into Light';
+    font-weight: 100;
+    font-size: 25px;
+}
+.container{
+     background: purple;
+     padding: 50px 5px;
+
+}
+.caja{
+    background:crimson;
+    border: 1px solid black;
+    height: 100px;
+    width: 100px;
+    margin: 20px;
+    display: flex;
+    transform: scale(2);
+
+}
+
+b{
+    margin: auto;
+}
+-------------------------bakgraound--------------------
+*{
+    font-family:'Shadows Into Light';
+    font-weight: 100;
+    font-size: 25px;
+    background-color: violet;
+}
+.container{
+     background: purple;
+     height: 1000px;
+     margin: 40px;
+     background-image: url("https://i.pinimg.com/originals/83/eb/70/83eb7007472df10edda02f6edef8561e.jpg");
+     background-size: cover;
+     background-repeat: no-repeat;
+     background-attachment: fixed;
+}
+*/
+
+*{
+    font-family:'Shadows Into Light';
+    font-weight: 100;
+    font-size: 25px;
+}
+.container{
+    filter: contrast(30);
+    background: #fff;
+    background: #5f4;
 
 
+}
 
+.caja{
+    display: inline-block;
+    width: 150px;
+    height: 150px;
+    background: crimson;
+    margin: 40px;
+    border-radius: 50%;
+    filter: blur(20px);
+}
+.caja:first-child{
 
+    animation: trasladar 2s alternate infinite;
+}
+
+@keyframes trasladar{
+    0%{
+        transform: translate(0);
+    }
+    100%{
+        transform: translate(160px);
+
+    }
+    
+}
 

@@ -779,4 +779,175 @@ align-self: start
 se centra pero solo aplica para los items esto ya no se afecta al contenedor
 justify-self: igual que el que el align-self
 
+-----------------------------Grid Area----------------------------------
+cuando se trabaja con areas se puede manejar el nombre de cualquier linea.
+
+EN ele ejemplo se nombro por areas como se iba a llamar cada parte. 
+    grid-template-areas: 
+    "header header header"
+    "aside main main"
+    "aside main main"
+    "aside main main"
+    "aside main main"
+    "footer footer footer";
+    asi se declaro en el html esos 4 elementos para distribuir en la pantalla un modelo basico de una pagina web.
+    ---------------------shorthands-----------------------------
+    no es muy recomendado
+    temas que no se usan mucho y es mejor utilizar todo de forma manual
+    -----------------------------------------responsive design------------------------------------------
+    tecnica para adaptar la pag web a todas las resoluciones
+
+    estructuras flexibles (contenedores flexibles, imagenes, videos)
+    Media queries
+    se usa en consultas de medios para aplicar diferentes estilos para diferentes tipos/ dispositivos de medios
+
+        -ancho y alto de una ventana grafica 
+        -ancho y alto de un dispositivo 
+        -orientacion (tableta/landscape, portrait)
+        -resolucion 
+
+    propiedades:
+    all:
+        apto para todo dispositivo
+        print: Destinado a material impreso y de visualizacion de documentos enuna pantalla n modo vista previa de vista a la impresion 
+        Screen: Diseñado principalmente para pantallas
+        speech: Disponible para sintetizadores de voz
+
+    Operadores AND | OR 
+
+    Orientacion portrait / landscape
+
+
+    -----------------------------------------------------Transitions------------------------------------------------------
+    temario:
+
+    transition: propiedad que nos permite hacer transiciones en el momento mostrar los frames en el estado. Progreso de un cambio
+    se necesita darle una propiedad y una duración necesita un valor si o si 
+
+
+    transition-property: propierty/ies-all-none
+    transition-duration: durations/s
+    transition-delay delay/s 
+    transition-timing-function: linear | ease | ease-in | ease-out |ease-in-out | step-start | step-end | steps(int, start|end)| initial |inherit (hereda la propiedad del estilo anterior)
+    transitions:
+
+----------------------------------------------------Animaciones--------------------------- 
+las animaciones funcionan similar a las transiciones
+
+animation-name:name
+animation-duration:duration
+animation-delay:delay
+animation-timing-function:(transition values)
+animation-iteration-count: number
+animation-fill-mode: none | forwards | backwards | both| initial |inherit
+animatio-direction: normal | reverse | alternate |alternate-reverse  
+
+
+
+para crear animaciones se empieza con la fregla
+@keyframes (nombre de la animacion que queraamaos
+)
+
+se debe poner como se va a comportar la animacion con from y to
+
+@keyframe (nombre de la animacion){
+    from{
+        (se utilizan las propuedades del item )
+        ejemplo de la caja
+        position: relative;
+        left:0;
+        (osea que tiene una posicion relative dentro de su seccion y empezara en left desde el inicio)
+
+    }
+    to{
+        left:80%
+        va a acabar moviendose 80% de la linea que tiene
+
+    }
+}
+
+
+otra manera de darle animacion es con porcentajes
+usando el mismo ejemplo
+
+
+
+---------------cubic-bezier-----------------------------------------------
+otra propiedad de animaciones es el cubic bezier, que es una funcion matematica para poder realizar el movimiento de los items de manera más detallada. 
+Esta utiliza formulas matematicas y en programación se dan los parámetros en x y y para poder darle el valor para la funcionalidad.
+
+es recomendable buscar un bezier generator para una mejor animación.
+
+------------------------------Transform-----------------------------------
+
+Transformar un elemento. las transformaciones reciben funciones 
+
+transform: translateX(x) - translateY(y) translate(x-xy)(Si usamos porcentajes, son porcentajes relativos al elemento)
+transform: scale(xy-x,y)- scaleX(x) - scaleY(y)
+transform: rotate (AngleUnit) - rotateX(angleUnit) - rotateZ(angleUnit) - rotate3D(angleUnit)|| angleUnit = deg -rad -grad
+transform: skew(angleUnit)
+
+No hay mucho en el curso, pero son para hacer modificaciones de tamaño, pespectiva del item. Lo mejor para esto es usar generadores.
+
+---------------------------Background------------------------------------
+background-color
+background-size: x, y, auto, cover, contain
+background-origin: origen de la foto (crea la imagen desde donde esta definido)
+background-image: url()
+background-position:left, right, bottom, top, center ++ left, top, bottom, right, center
+background-atachment: scroll | fixed | inherit
+background-clip: border-box |padding-box |content-box  (esto es desde donde se va a empezar a ver la imagen recortandola)
+ 
+
+----------------------------variables------------------------------
+  se les puede asignar variables locales y globales 
+  y se declaran de la siguiente forma
+
+  para una variable global se tiene de declarar asi
+
+  :root{ (los 2 puntos al inicio es para declarar una variable global)
+
+  --(nombre de la variable): (atributo de la variable): (˜˜)
+  ejemplo
+  --color-fondo-rojo: colo-rojo;
+  (se declara con 2 guiones medios, luego el atributo)
+
+  }
+
+
+si se quiere declarar una variable local se declara de la misma manera pero dentro del valor que se quiera cambiar de la misma forma
+si ya hay una variable global llamada de la misma forma que la variable local que se declaró lo que hace es  sustituir el valor de la variable pero solo se va a ver afectado localmente
+
+
+----------------------filters-------------------------------------
+
+none
+blur(px)
+bightness(0-1)
+contrast(number or %)
+drop-shadow(medidas)
+grayscale(%)
+hue-rotate(deg)
+invert(%)
+opacity(%)
+saturate(%)
+sepia(%)
+url("filters.svg#filters.id)
+
+
+---------------------Otras propiedades---------------
+Direction:ltr |rtl |initial |inherit
+LetterSpacing: 
+Scroll-behaivor:(esta es de as mas usadas para llevar a una sola parte del contenido, usado para muchas landing pages
+) se le da el valor smooth, eso hace para un scroll de manera lenta 
+
+
+user-selected: el usuario no puede seleccionar nada del texto, valor o lo que sea que tenga esta propiedad
+text-shadow
+
+hay muchos seletores, revisar estandares y navegadores.
+
+---------------------------------fin de curso CSS-------------------
+
+
 
