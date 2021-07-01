@@ -1,0 +1,86 @@
+Que es Javascript?
+-Lenguaje de programación
+-Interpretado
+-Orientado a objetos
+-Imperativo (paso por paso)
+-Basado en prototipos /instancias/ classless
+-Case Sensitive (Upper and Lower Case)
+-Tipado Debil
+-Lenguaje dinámico
+
+-ECMASCRIPT
+
+
+
+
+---------------------------Variables----------------------------
+-Concepto:w
+un espacio que guardamos en memoria
+-Ejemplos
+-Tipos de datos (primitivo):
+    * String (Cadena de texto)
+    * Number
+    * Boolean
+    * Symbol
+-Casos Especiales de datos: 
+    * Undefined: no definido, el valor existe pero no tiene valor
+    * Null: valor vacio. tiene valor pero es valor vacio
+    * Nan: Not a Number, es cuando el valor no se puede operar con el mimso tipo de valor de la variable. ejemplo numero1 = 5; numero2 = "hola" alert(numero1 * numero2) resultado es NaN
+-Scope: Es un tipo de variable local o global dependiendo en donde se esta declarando.
+
+
+
+-Hoisting: creación y ejecución de código
+JS puede reaccionar igual si las variables son deblaradas despues de ser llamadas por una función.
+(Cosa pendiente)
+
+
+
+
+
+-Tipos de variables(Let, Var y Const = cuando se le declara un valor siempre va a tener ese valor, no se puede re escribir. Solo se inicializa una vez)
+
+Let y Var si se pueden modificar despues de ser inicializdas con un valor
+const se tiene que inicializar cuando se declara
+
+const es como una variable global, a ella no se le puede cambiar el valor
+
+
+- Crear multiples variables (Separandolas por coma) -> let nombre1 = "Jorge", nombre2 = "pedro";
+
+
+-Pruebas con Prompt: Prompt se utiliza para pedir datos al usuario por medio de una ventana emergente del navegador
+
+------------------------------------Operadores de Javascript---------------------------------------------------
+-Operadores de Asignación:
+definición:
+asigna un valor al operando de la izquierda basado en el operando de la derecha
+Nombres                                             Abreviaciones                  Significado
+asignación                                              x = y                       x = y
+adicción                                                x += y                   x = x + y
+sustracción                                             x -= y                   x = x - y 
+multiplicación                                          x *= y                   x = x * y 
+division                                                x /= y                   x = x / y
+resto/residuo                                           x %= y                   x = x % y
+exponenciacion                                          x **= y                  x = x ** y
+desplazamiento izquierda                                x <<= y                  x = x << y 
+desplazamiento derecha                                  x >>= y                  x = x >> y
+desplazamiento sin signo desplazamiento der             x >>> = y                x = x >>> y 
+asignación AND                                          x &= y                   x = x & y 
+asignación XOR                                          x ^= y                   x = x ^ y
+asignación OR                                           x |= y                   x = x | y 
+
+
+
+
+residuo: solo muestra el resultado sobrante de una división y se redondea al numero mas cercano. resuduo de una division.
+
+
+
+
+-Operadores Aritméticos:
+definicion:
+toman valores numéricos( ya sean literales (tipos de datos) o variables) como sus operando sy retornan un valor numérico único
+
+
+
