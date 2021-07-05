@@ -1,0 +1,26 @@
+----11)Arrays-----
+
+-Definicion y usos:
+cuando tenemos una variable guardamos un dato
+
+-Formas de crear un array
+se abren corchetes []
+
+----12) Arrays asociativos-----
+-Definicion
+-Sintaxis y usos
+
+----13) Bucles e Iteración------
+-definicion y usos
+-sentencia while
+-sentencia do while
+-sentencia for
+-sentencia for in
+-sentencia for of
+
+-------------------
+-sentencia break
+-sentencia label
+-sentencia continue
+
+-----14)
