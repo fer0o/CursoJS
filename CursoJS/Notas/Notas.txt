@@ -81,6 +81,70 @@ residuo: solo muestra el resultado sobrante de una división y se redondea al nu
 -Operadores Aritméticos:
 definicion:
 toman valores numéricos( ya sean literales (tipos de datos) o variables) como sus operando sy retornan un valor numérico único
+------------------------Concatenación----------------------------
 
+Concatenación: Unir Strings
+
+se pueden forzar strings para numeros  y esto se hace (" " + variable1 + variable2) con las comillas convierte todo en una cadena de texto 
+tambien se puede conocer como tipado dinámico.
+
+tambien se puede hacer una converción con un método Concat con el concat es obligatorio tener un string.
+lo que hace básicamente es convertir un valor numerico a un string y solo funciona con cadenas.
+
+otra forma de concatenar es con backtiks y la variable entre ${}
+
+------------------------(8)Operadores(intermedio)-------------------
+
+
+Operadores de comparación:
+comparan 2 expresiones y devuelven un valor boolean que representa la relación de su valores (valores booleanos: true o false)
+  
+
+ equality                   a == b (este no diferencía el tipo de datos, solo diferencia el valor de la variable)
+ inequality                 a != b (este identifica si son el mismo tivo de valor, pero no identifica si son el mismo tipo de dato. ejemplo numero=23 texto="23" resultado es falso por que ambos son iguales en cantidad, pero ambos son iguales en numero)
+ identify                   a === b (este identifica que sea el mismo tipo de datos y el mismo valor)
+ no identify                a !== b (este identifica si son diferentes en tipo de dato )
+ greater than               a  >  b
+ greater than or equal      b  >= b
+ less than                  a  <  b                 (operaciones basicas de mayor, menor igual que)
+ less or equal              a  <= b
+
+
+
+ Operadores lógicos:
+ nos devuelven un resultadoa partir de que se cumpla (o no ) una condición, su resultado es booleano, y sus operandos son valores lógicos o asimilables a ellos.
+
+ AND (&&) lógico: expr1 && expr2 
+Regresa expr1 si tal puede convertirse a false; de lo contrario Rregresa expr2. De esta forma cuando se usan valores booleanos, &&  regresa true si ambos operandos son verdaderos; de lo contrario regresa false.
+
+
+
+
+ OR: (||) lógico: expr1 || expr2
+ Regresa expr1 si tal puede convertirse en true; de lo contrario regresa expr2. De esta forma cuando se usan con valores boolean, || regresa true si cualquier operando es verdadero; de lo contrario regresa false.
+
+tablas de verdad con OR
+
+
+ Not (!) lógico: !expr
+ Regresa false si el único operando puede convertirse a true; de lo contrario regresa false.
+
+
+-------------------------(9) Camel Case---------------------------
+Definición:
+es iniciar todo con minuscula y lo siguiente empieza con mayuscula asi con cada palabr de la funcion, variable, etc
+
+usos
+Ejemplos
+
+--------------------------(10) Condicionales---------------------
+Definición y usos:
+
+
+IF
+
+Else IF
+
+Else
 
 

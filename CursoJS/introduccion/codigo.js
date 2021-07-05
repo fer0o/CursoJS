@@ -31,11 +31,56 @@ let nombre = prompt("Hola escribe tu nombre");
 console.log(nombre)
 alert("tu nombre es : " + nombre)
 -----------------------------------------------
+
+------------Concatenación---------------------
+
+nombre = prompt(" Escribe tu nombre:  ");
+
+oracion =  `Hola y bienvenido ${nombre} Espero que tu estancia sea de tu agrado`;
+
+document.write(oracion);
+
+esto esta con backtiks
+
+-----------Operadores de comparación-------
+let numero1 = 20;
+let numero2 = 5;
+let texto1 = "20";
+let texto2 = "texto2"
+
+document.write(numero1 !== texto1);
+------------Operadores lógicos----------------
+let valor = true;
+let valor2 = true;
+
+let resultado_and = valor && valor2; //logico de AND 
+
+let resultado_or = valor || valor2 // logico de OR
+
+let resultado_not = !valor // logico de Not 
+
+document.write(resultado_not);
+
+//tablas de verdad
+
+
 */
 
-let numero = 10;
-numero += 5;
-document.write(numero)
+
+
+let valor = true;
+let valor2 = true;
+
+let resultado_and = valor && valor2; //logico de AND 
+
+let resultado_or = valor || valor2 // logico de OR
+
+let resultado_not = !valor // logico de Not 
+
+document.write(resultado_not);
+
+
+
 
 
 
