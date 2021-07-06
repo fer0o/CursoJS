@@ -1,0 +1,13 @@
+Problema A
+
+Un joven muy afortunado logró ganar el primer premio de la loteria
+Este pobre decide hacer una fiesta para festejar que salio de la pobreza. Este millonario
+compró una máquina que deja pasar solamente a los mayores de edad, entre otras cosas.
+
+Plantear 
+Dejar solo pasar a los mayores de edad *
+La primer persona que entre despúes de las 2 AM, no paga
+
+
+
+

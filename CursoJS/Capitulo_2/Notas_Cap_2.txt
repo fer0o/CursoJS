@@ -17,15 +17,49 @@ un array asociativos tiene un valor asociado
 -sentencia while: similar al if, pero se la pasan preguntando todo el tiempo.
 -sentencia do while
 -sentencia for: El bucle for se compone de 3 partes la primera es de la declaración e inicialización, la segunda es de la condición y la ultima es del aumento o del decremento.
--sentencia for in
--sentencia for of
+-sentencia for in (devuelve índice)
+-sentencia for of (Devuelve el valor)
 
 
 se puede hacer salto saltandose un valor con continue.
 
 -------------------
--sentencia break
+-sentencia break: con esto se interrumpe el ciclo, si después de cumplir la función hay mas datos se corta y e imprime el valor.
 -sentencia label
--sentencia continue
+-sentencia continue : es lo contrario del break cuando se cumple lo de la función el valor de la función la salta y no la muestr y si hay mas valores los imprime.
 
------14)
+explicado en código
+
+-----14) Funciones-------------
+-Definicion y usos
+-Formas de crear funciones ( y llamarlas)
+    Otra forma de crear funciones es asignar un nombre desde el inicio para después ser llamadas
+    ejemplo
+
+ saludar  function(){     <------- con esto decimos que la funcion se llama saludar y es una funcion y va sin el igual
+    respuesta = prompt ("Hola Usuario!!. como te fue en tu día");
+    if(respuesta == "bien"){
+        alert("Que bueno");
+    }
+    else{
+        alert("que pena");
+    }
+
+}
+saludar; <--------- aqui sabemos que saludar es una función y solamente la llamamos por el puro nombre, no es necesario dar enfasís de que saludar es un función
+
+
+
+-Return
+es el valor de regreso que va a guardar de termino de la funcion. Si el valor return da algo es cuando se termina la función
+
+-Parámetros
+-Scope: es donde va a afectar los parametros de la función asi como a las condiciones de dicha función
+
+-Funciones flecha:
+
+
+-----15) forEach----------------
+-Sintaxis y uso 
+-Ventajas respecto a for
+-Desventajas (Break, Continue)

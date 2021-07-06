@@ -122,3 +122,128 @@ for(let array in array2){
     }
 }
 */
+
+
+/**
+ * //Funciones
+ * 
+ * 
+function saludar(){
+    respuesta = prompt ("Hola Usuario!!. como te fue en tu día");
+    if(respuesta == "bien"){
+        alert("Que bueno");
+    }
+    else{
+        alert("que pena");
+    }
+
+}
+saludar();
+ */
+
+/** 
+ * //crear función
+function saludar(){
+    alert("hola");
+    return 3;   //aqui muestra donde acaba de ejecutarse el programa, todo lo que sea despues del return ya no va
+                //si pusiera
+                //alert("hola"); no se mostraría esto, debido a que la funcion terminó en el return
+
+}
+let saludo = saludar()
+//llamando función saludar
+document.write(saludo);
+
+*/
+
+
+/**
+ * //parametros de las funciones
+ * //las funciones no son funciones si no tienen parametros
+ * 
+ * function suma (num1, num2){          //<----- se declara la funcion suma y dentro del parentesis en vez de solo declarar que sea suma se le dan los parametros num1 y num2
+    let resultado_suma = num1 + num2;            //<----- se crea la variable rultado_suma y se inicializa con los parametros de num1 y num2 en forma de suma que es lo que necesita hacer el programa
+    document.write(resultado_suma);              //<----- se va a escribir el valor de resultado_suma
+    document.write("<br>");
+}
+
+suma(20,100);
+suma(70,55)
+
+ */
+
+/*
+opcion = prompt("bienvenido a la calculadora, que opción desea, digite solo el número?1.- suma 2.- Resta 3.-Multiplicación 4.-Division");
+opcion = parseInt(opcion);
+
+num1 = prompt("numero 1");
+num1 = parseInt(num1);
+num2 = prompt("numero 2 ");
+num2 = parseInt(num2);
+if(opcion === 1){
+    function suma (num1, num2){
+        let resultado_suma = num1 + num2;
+        return resultado_suma
+    }
+let resultadoSuma = suma(num1, num2);
+document.write( "El resultado de la suma es: " + resultadoSuma);
+document.write("<br>");
+
+}
+else if(opcion ===2){
+    function resta ( num1, num2){
+        let resultado_resta = num1 - num2
+        return resultado_resta
+    }
+let resultadoResta= resta(num1, num2);
+document.write("El resultado de la resta es " + resultadoResta);
+document.write("<br>");
+
+
+}
+
+else if(opcion ===3){
+    function multiplicacion( num1, num2){
+        let resultado_multiplicacion = num1 * num2
+        return resultado_multiplicacion
+    }
+let resultadoMultiplicacion= multiplicacion(num1, num2);
+document.write("El resultado de la multiplicación es "+resultadoMultiplicacion);
+document.write("<br>");
+
+}
+
+else if(opcion === 4){
+    function division ( num1, num2){
+        let resultado_division = num1 / num2
+        return resultado_division
+    }
+
+let resultadoDivision= division(num1, num2);
+document.write("El resultado de la division es " + resultadoDivision);
+document.write("<br>");
+
+}
+else{
+    prompt("opción no válida");
+}
+
+*/
+
+let nombre = prompt("cual es tu nombre: ")
+const saludar = (nombre) =>{
+    let frase = `Hola ${nombre}, como estas?`
+    document.write(frase);
+}
+saludar(nombre);
+
+
+
+
+
+
+
+
+
+
+
