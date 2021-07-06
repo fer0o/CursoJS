@@ -4,19 +4,24 @@
 cuando tenemos una variable guardamos un dato
 
 -Formas de crear un array
-se abren corchetes []
+se abren corchetes [] y para llamarlos se hacen por medio de posiciones. las posiciones empiezan desde 0 en adelante
 
 ----12) Arrays asociativos-----
--Definicion
+También son objetos. 
+-Definicion: se parecen mas al formato JSON
+un array asociativos tiene un valor asociado
 -Sintaxis y usos
 
 ----13) Bucles e Iteración------
 -definicion y usos
--sentencia while
+-sentencia while: similar al if, pero se la pasan preguntando todo el tiempo.
 -sentencia do while
--sentencia for
+-sentencia for: El bucle for se compone de 3 partes la primera es de la declaración e inicialización, la segunda es de la condición y la ultima es del aumento o del decremento.
 -sentencia for in
 -sentencia for of
+
+
+se puede hacer salto saltandose un valor con continue.
 
 -------------------
 -sentencia break
