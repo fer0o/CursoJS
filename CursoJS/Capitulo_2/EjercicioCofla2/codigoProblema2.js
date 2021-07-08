@@ -25,6 +25,6 @@ verificarCliente(3);
 verificarCliente(4);
 verificarCliente(9);
 verificarCliente(8);
-verificarCliente(3);
+verificarCliente(9);
 
 
