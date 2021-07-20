@@ -14,7 +14,7 @@ const dividir =(num1 , num2) =>{
     return parseInt (num1) / parseInt (num2);
 }
 
-let operacion = prompt( " que operacion deseas       1.- Suma ,    2.- Resta    3.- Multiplacion     4.- Division");
+let operacion = prompt( " que operacion deseas\n 1.- Suma\n 2.- Resta\n 3.- Multiplacion\n 4.- Division");
 
 if(operacion == 1){
     let numero1 = prompt("Ingresa el primer numero ");
