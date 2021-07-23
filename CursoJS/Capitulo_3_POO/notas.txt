@@ -1,24 +1,27 @@
 POO
-    - Definición y usos
+    - Definición y usos: paradigma (crear soluciones) de la programacion simulando la programación en la vida real
     - Ejemplos
-    - Istanciación
+    
 Conceptos básicos de POO
     - Clase
     - Objeto
-    - Atributo
+    - Atributo: propiedades del objeto 
     - Método
     - Constructor
+    - Istanciación
 
 Caracteristicas de la POO
-    - Abstracción
-    - Modularidad
-    - Jerarquia
+    - Abstracción: intentar reducir lo mas posible el objeto 
+    - Modularidad: capacidad de resolver un problema dividiendolo en partes
+    - Encapsulamiento: hacer que todos los datos sean privados.Informacion se quede en seccion y no sea capaz
+    - Jerarquia: 
+    - Polimorfismo: como un objeto se comporta de manera distinta ante el mismo metodo por sus propiedades.
 
 Otros Conceptos de POO
-    - Polimorfismo
     - Herencia
-
-Otros Conceptos de POO
     - Encapsulamiento
-
+    - Metodos estáticos : es un metodo que no necesita que la clase se defina para poder ser creado 
+    - Metodos de Acceso (Getter y Setter) get obtener un valor, set modificar un valor 
     
+
+
