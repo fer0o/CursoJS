@@ -1,0 +1,9 @@
+Cofla entró a una tienda que vende celulares porque le pareció bastante bueno comprarse un nuevo celular.
+De los modelos que hay disponibles en esa tienda, Cofla le llamaron la atención 3 telefonos especificamente,
+El problema es que nungún vendedor sabe nada al respecto, entonces no pueden recomendarle absolutamente nada.. pero claro:
+el antes de comprar esos celulares quiere ver las cualidades y comportamientos de cada uno para poder comprarlos, ahi es donde entramos nosotros
+
+Objetivo:
+    -  Crear un sistema para mostrarle a cofla las particularidades de los 3 celulares.
+    -  Cada celular debe tener color, peso, resolución de pantalla, resolución de camara y memoria ram
+    -  Cada celular debe poder prender, reiniciar, apagar, tomar fotos y grabar
