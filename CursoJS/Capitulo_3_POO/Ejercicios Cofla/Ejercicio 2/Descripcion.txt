@@ -1,0 +1,7 @@
+Cofla no está satisfecho con los celulares, asi que decide ir a la dección de celulares de alta gama, donde va a poder
+encontrar los celulares mas caros del lugar, asi que al entrar vió dos celulares que le encantaron, estos 2 celulares de alta gama pueden hacer todo lo que podían los 3 anteriores
+pero tienen mejores características y ademas pueden grabar en camara super lenta, reconocimiento facial y camara extra
+
+Objetivo:
+
+-Implementar todas estsa cualidades en los celulares de alta gama
