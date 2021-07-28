@@ -1,0 +1,44 @@
+Metodos de cadena
+    -concat() junta 2 o mas cadenas y la hace una sola
+    -startsWidth()si una cadena comienza con los caracteres de otra cadena devuelve true, si no devuelve false
+    -endsWidth() si una cadena termina con los caracteres de otra cadena, devuelve true, si no devuelve false
+    -includes() si una cadena puede encontrarse dentro de otra cadena, devuelve true, si no devuelve false
+    -indexOf()devuelve el primer caracter de la cadena, si no existe devuelve -1
+    -lastIndexOf() devuelve el ultimo indice del primer caracter de la cadena, si no existe devuelve -1 
+
+    -padStart()[ Propuesta de estandar] - Rellenar cadena al principio con los
+    -padEnd()[Propuesta de ECMA] Rellenar cadena al final con los caracteres
+    -repeat() -Devuelve la misma cadena pero repetida la catidad que le indiques
+
+    -split()Divide la cadena como le pidamos (separa el array mostrando lo que esta antes y lo que esta despues del target)
+    -substring()Nos retorna un pedazo de la cena que seleccionemos
+    -toLowerCase() Convierte una cadena a minuscula
+    -toUpperCase() Convierte una cadena a mayuscula
+    -toString()metodo devuelve una cadena que representa al objeto especificado
+    -trim() elimina los espacio en blanco al principio y al final de una cadena
+    -trimEnd() elimina los espacios en blanco al final de una cadena.
+    -trimStart()elimina los espacios en blanco al comienzo de una cadena.
+    -valueOf() retorna el valor primitivo de un objeto string
+
+
+
+Metodos de Arrays
+
+    --------Transformadores------
+    -pop()elimina el ultimo elemento de un array y lo devuelve
+    -shift() elimina el primer elemento de un array y lo devuelve
+    -push() agrega un elemento al array al dinal de la lista
+    -reverse() invierte el orden de los elementos de un array.
+    -unshift() agrega uno o mas elementos al inicio del array, y devuelve la nueva longitud del array
+    -sort()ordena los elementos de un arraglo (array) localmente y devuelve el arreglo ordenado.
+    -splice() cambia el contenido de un arraty eliminando elementos existentes y/o agregando nuevos elementos 
+
+    --------Accesores--------------
+    -join() une todos los elementos de una matriz (u objeto similar) en una cadena y la devuelve
+    -slice() devuelve una parte del array dentro de un nuevo array empezando por el inicio hasta el fin (fin no incluido)
+    -Metodos ta vistos en cadenas toString (), lastIndexOf()
+
+
+    -------De repeticion----------
+    -filter() crea un array con todos los elementos que 
+    forEach() ejecuta la funcion indicada una vez por cada elemento
