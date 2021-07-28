@@ -1,0 +1,6 @@
+Cofla ya esta terminando el primer semestre del primer ciclo, la tarea que le debe realizar es mucho mas avanzada de la que tenía antes
+además de suma, resa multiplicación y división ahora también debe calcular potencias, raices cuadradas y cúbicas
+
+
+Objetivo
+Perfeccionar calculadora para poder implementar las nuevas funciones.
