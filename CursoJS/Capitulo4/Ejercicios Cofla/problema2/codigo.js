@@ -3,38 +3,65 @@
  const obtenerInformacion =(materia) =>{
      //logica el primer elemento de la clase es el profesor 
     materias = {
+        //lo mas parecido a un array asociativo
         introCarrera:["Irma García","Rodrigo","Juancho", "Erick", "Cofla", "Saul"],
         fundamentosProgamacion:["Irma García","Cofla", "Maria", "Juan", "Juancho"],
         matematicasComputcionales:["Lourdes Quesada","Rodrigo","Maria", "Juan", "Erick"],
-        Matematicas1:["Iliana Carrillo","Roberto", "Dante", "Rigo", "Cofla", "Miriam", "Cristina", "Jorge"],
+        Matematicas1:["Iliana Carrillo","Roberto", "Dante", "Rigo", "Miriam", "Cristina", "Jorge"],
         Fisica1:["Pablo Paniagua","Cofla","Roberto", "Dante", "Rigo","Maria", "Juan", "Juancho","Erick", "Saul" ],
         Administracion:["Pedro Carreon","Cofla","Roberto", "Dante", "Rigo","Maria", "Juan", "Juancho","Erick", "Saul","Monica", "Sandra" ]
 
     }
     if (materias[materia]!== undefined){
-        return [materias[materia], materia];
+        return [materias[materia], materia, materias];
     }
     else{
-        return false;
+        return materias;
     }
 
 }
 
 
-
-
-let informacion=obtenerInformacion("Fisica1")
-
+const mostrarInformacion=(materia) =>{
+let informacion=obtenerInformacion(materia)
 if(informacion!==false){
-    let profesor = obtenerInformacion ("Fisica1")[0][0]
-    let alumno = obtenerInformacion("Fisica1")[0]
+    let profesor = informacion[0][0]
+    let alumno = informacion[0]
     alumno.shift();
     document.write(`El profesor de <b>${informacion[1]}</b> es: <b style="color:red">${profesor}</b></br>
-    Los alumnos son: <b style="color:blue">${alumno}</b> <br> <br>` )
+    Los alumnos son: <b style="color:blue"> ${alumno}</b> <br> <br>` )
     
 }
+}
 
+//funcion contar clases cofla
+const cantidadClases=(alumno)=>{
+    let informacion = obtenerInformacion()
+    let clasesPresentes = []
+    let cantidadTotal = 0;
+    for(info in informacion){
+        if(informacion[info].includes(alumno)){
+            cantidadTotal ++;
+            clasesPresentes.push( " " + info)
+        }
+    }
+    return `<b style="color:blue">${alumno}</b> esta en <b> ${cantidadTotal} clases: </b> <b style="color:green">${clasesPresentes}</b><br><br>
+    `
+
+}
+
+mostrarInformacion("Fisica1")
+mostrarInformacion("Matematicas1")
+mostrarInformacion("introCarrera")
+mostrarInformacion("fundamentosProgamacion")
+mostrarInformacion("matematicasComputcionales")
+mostrarInformacion("Administracion")
+
+document.write(cantidadClases("Cofla"))
+document. write(cantidadClases("Juancho"))
+document.write(cantidadClases("Pamela"))
 //document.write(informacion)
+
 
 
 
