@@ -1,0 +1,25 @@
+Capitulo 5 la consola
+
+funciones de registro.
+
+    - assert() Aparece un mensaje de error en la consola si la afirmación es falsa. Si la afirmación es verdadera, no aparecerá nada (No estandar)
+    - clear() limpia la consola
+    - error() muestra un mensaje en la consola web
+    - info() Emite un mensaje informativo a la consola web. En firefox y chrome se muestra un pequeño icono "i" junto a estos elementos en el registros de la consola web
+    - log() muestra un mensaje en la consola web ( o del interprete JavaScript)
+    - table() Esta funcion toma un argumento obligatorio: data, que debe ser un array o un objeto y un parametro adicional: columns y nos muestra una tabla en consola.
+    - warn() Imprime un mensaje de advertencia en la consola web
+    - dir() Despliega una lista interactiva de las propiedades del objetos JavaScript especificado [no estandar]
+
+
+    funciones de conteo
+
+    -count() Registra el numero de veces que se llama al count() Esta funcion toma como argumento opcional una etiqueta
+    -countReset() resetea el contador console.count()
+
+
+    funciones de agrupación 
+
+    - group() crea un nuevo grupo 
+    - groupEnd() Remueve un grupo en 
+    - groupCollapsed()crea un grupo 

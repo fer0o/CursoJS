@@ -1,1 +1,1 @@
-document.write("cap 5 chavon")
+console.log(["hola chavon"])
