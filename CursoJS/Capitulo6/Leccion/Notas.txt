@@ -1,0 +1,34 @@
+El DOM
+Document Object Model
+
+Definicion
+Concepto extendido
+
+
+Nodo - Un nodo en el DOM es cualquier etiqueta del cuerpo, como un párrafo, el mismo body o incluso las etiquetas de una lista
+
+    Document: el nodo document es el nodo ráiz, a partir de la cual se derivan el resto de nodos.
+    Element: nodos definidos por html
+
+    Text: el texto dentro de un nodo element se considera un nuevo nodo hijo de tipo text ( texto)
+
+    Attribute: los atributos de las etiquetas definen nodos,( en JS no los veremos como nodos, si no como informacion asociada al nodo del tipo element)
+
+    Comentarios y otros: los comentarios y otros elementos como las declaraciones doctype en cabecera de los documentos HTML generan nodos.
+
+
+
+Document - Metodos de seleccion de elementos
+    -getElementbyId() Selecciona un elemento por ID
+    -getElementsByTagName() Selecciona todos los elementos que coincidan con el nombre de la etiqueta especificada.
+
+    -querySelector() Devuelve el primer elemento que coincida con el grupo especificado de selectores.
+
+    -querySelectorAll() devuelve todos los elementos que coincidan con el grupo especificado de selectores.
+
+
+Metodos para definir, obtener y eliminar atributos
+
+-setAttribute() Modificar el valor de un atributo
+-getAttribute() Obtiene el valor de un atributo
+-removeAttribute() Remueve el valor de un atributo 
