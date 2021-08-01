@@ -6,7 +6,7 @@ funciones de registro.
     - clear() limpia la consola
     - error() muestra un mensaje en la consola web
     - info() Emite un mensaje informativo a la consola web. En firefox y chrome se muestra un pequeño icono "i" junto a estos elementos en el registros de la consola web
-    - log() muestra un mensaje en la consola web ( o del interprete JavaScript)
+    - log() muestra un mensaje en la consola web ( o del interprete JavaScript) mensaje de depuración
     - table() Esta funcion toma un argumento obligatorio: data, que debe ser un array o un objeto y un parametro adicional: columns y nos muestra una tabla en consola.
     - warn() Imprime un mensaje de advertencia en la consola web
     - dir() Despliega una lista interactiva de las propiedades del objetos JavaScript especificado [no estandar]
@@ -20,6 +20,13 @@ funciones de registro.
 
     funciones de agrupación 
 
-    - group() crea un nuevo grupo 
-    - groupEnd() Remueve un grupo en 
-    - groupCollapsed()crea un grupo 
+    - group() crea un nuevo grupo en línea en el registro de la consola web
+    - groupEnd() Remueve un grupo en linea en el registro de la consola web
+    - groupCollapsed()crea un grupo en linea pero por el contrario, el usuario debe expandirlo para verlo.
+
+
+    funciones de temporización
+
+    - time() inicia un temporizador
+    - timeEnd() Registra el valor actual de un temporizando.
+    - timeLog() Detiene un temporizador

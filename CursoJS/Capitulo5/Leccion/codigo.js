@@ -1,1 +1,2 @@
-console.log(["hola chavon"])
+
+console.log("capitulo pequeño, es mas practico")
