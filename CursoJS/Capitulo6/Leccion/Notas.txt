@@ -32,3 +32,29 @@ Metodos para definir, obtener y eliminar atributos
 -setAttribute() Modificar el valor de un atributo
 -getAttribute() Obtiene el valor de un atributo
 -removeAttribute() Remueve el valor de un atributo 
+
+
+Atributos globales
+    -contenteditable: indica si el elemento puede ser editable por el usuario
+    -dir: indica la direccionabilidad del objeto
+    -hidden: indica si el elemento aun no es, o ya no es, relavante
+    -style: contiene declaraciones de estilo css para ser aplicadas al elemento.
+    -tabindex: indica si el elemento puede tener un focus de input.
+    -title: contiene un texto con informacion relacionada al elemento al que pertenece.
+     
+
+Atributo de Inputs
+    -className: 
+    -value
+    -accept
+    -form
+    -minlength
+    -placeholder
+    -required
+
+todos se pueden acceder desde JS
+
+
+Atributos style
+    -usos y ejemplos
+    -propiedades Camel Case
