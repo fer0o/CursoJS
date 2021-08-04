@@ -58,3 +58,53 @@ todos se pueden acceder desde JS
 Atributos style
     -usos y ejemplos
     -propiedades Camel Case
+
+
+clases, classList y Metodos de classList
+    -add() añade una clase
+    - remove() añade una clase
+    - item() devuelve la casle del indice especificada
+    - contains() verifica si ese elemento posee o no la clase especificada
+    - replace() reemplaza una clase por otra
+    - toogle() si no tiene la clase especificada, la agrega si ya la tiene la elimina
+
+Obtencion y modificacion de elementos
+    -textContent -Devuelve el texto de cualquier nodo
+    -innerText -devuelve el texto visible de un node element
+    -outerText -devuelve el texto que las etiquetas html incluidas las etiquetas
+
+
+
+Creacion de elementos
+    -createElements()
+    -createTextNode()
+    -appendChild()
+    -createDocumentFragment()
+
+
+Obtencion y modificacion de childs(Hijos)
+
+    -firstChild()
+    -lastChild()
+    -firtsElement()
+    -lastElement()
+    -childNodes()
+    -children
+
+Metodos de childs(Hijos)
+    -replaceChild()
+    -removeChild()
+    -hasChildNodes()
+
+
+Propiedades de parents(Padres)
+    -parentElement
+    -parentNode
+
+Propiedades de Siblings(Hermanos)
+    -nextSibling
+    -previousSibling
+    -nextElementSibling
+
+Nodos Extras
+    -closest()
