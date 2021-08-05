@@ -33,7 +33,7 @@ for( i =0; i<20;i++){
     div.addEventListener("click",()=>{changeHidden(modeloRandom)})
     div.tabIndex=i;
     div.classList.add(`item-${i}`,'flex-item')
-    div.innerHTML=...llave
+    div.innerHTML=llave[0] +llave[1]+ llave[2]+llave[3]
     documentFragment.appendChild(div)
     
 }
