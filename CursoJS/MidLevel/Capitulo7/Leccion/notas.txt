@@ -1,0 +1,39 @@
+Objeto Window
+Introduccion a Window
+    -Hereda las propiedades de EventTarget
+    -open() Carga un recurso en el contexto de un nuevo navegador o uno que ya existe
+    -close() cierra la ventana actual, o la ventana que se llamó
+    -closed indica si la ventana referenciada está cerrada o no.
+    -name obtiene/establece el nombre del contexto de navegación actual.
+    -stop() detiene la carga de recursos en el contexto de navegación actual
+    -print() Abre el cuado de dialogo Imprimir en el documento actual.
+    -prompt() Abre un cuadro de dialogo con un mensaje que solicita al usuario un dato (String)
+    -confirm() Abre un cuadro de dialogo con un mensaje y dos botones: Aceptar y Cancelar.
+
+
+    -screen() devuelve una referencia al objeto de pantalla asociado con la ventana.
+    -screenLeft devuelve la distancia horizontal entre el borde izquierdo del navegador y el borde superior de la pantalla
+    -screenTop devuelve la distancia vertical entr el borde superior del navegadir y el borde superior de la pantalla
+    -scrollx devuelve el numero de pixeles que el documento desplaza actualmente horizontalmente.
+    -scrolly devuelve el numero de pixeles que el documento se desplaza actualmente verticalmente
+    -scroll() desplaza la ventana a un lugar particular en el documento. (con options y posiciones)
+
+    -minimize() minimiza la ventana
+    -resizeBy() cambia el tamaño de la ventana actual en una cantidad especifica
+    -resizeTo() redimensiona dinámicamente la ventana.
+    -moveBy() Mueve la ventana en una ubicación relativa.
+    -moveTo() Mueve la ventana en la ubicación absoluta.
+
+Objetos barprop
+    _locationbar
+    _menubar
+    _personalbar
+    _statusbar
+    _toolbar
+
+Location
+    -window.location.href -> devuelve el href (URL) de la página actual)
+    -window.location.hostname -> devuelve el nimbre de dominio del servidor web
+    -window.location.pathname -> devuelve la ruta y el nombre de archivo de la página
+    -window.location.protocol -> devuelve el protocolo web utilizado por http: o https:
+    -window.location.assign() -> carga un nuevo documento
