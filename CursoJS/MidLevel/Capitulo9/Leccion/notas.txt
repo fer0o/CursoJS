@@ -1,0 +1,36 @@
+Eventos
+
+    -Definición: cualquier cambio que ocurre en la página
+    -de Eventos o "Event Handlers"
+    -Escucha de eventos "Event Listeners"
+    -El objeto Event
+    -Flujo de eventos o "event flow" -> se ejecuta del mas especifico al menos especifico (los mas especificos son los hijos, los menos especificos son los contenedores)
+    -Event Bubbling (por defecto) vs Event Capturing
+    -event.stopPropagation()
+
+    ---------------> No se pueden hacer funciones flecha para los addEventListeners, También no acepta parámetros <----------------------
+
+Eventos Mouse
+    -click -> ocurre con un click
+    -dblclick -> ocurre con un doble click
+    -mouseover -> ocurre cuando el punter se mueve sobre un elemento o sobre uno de sus hijos
+    -mouseout -> ocurre cuando se mueve el punter fuera de un elemento o de sus elementos secundarios
+
+    ------otros------
+    -contextmenu -> ocurre con un click en el boton derecho en un elemento para abrir un menú contextual
+    -mouseenter -> ocurre cuando el puntero se mueve sobre un elemento
+    -mouseleave -> ocurre cuando el puntero se mueve fuera de un elemento
+    -mouseup -> ocurre cuando un usuario suelta un botón del mouse sobre un elemento.
+    -mousemove -> ocurre cuando el puntero se mueve mientras está sobre un elemento.
+
+Eventos de Teclao
+    -keypress -> ocurre cuando una tecla se presiona.
+    -keydown -> ocurre cuando una tecla se deja de presionar
+    -onkeyup -> ocurre despúes de que los dos eventos anteriores hayan concluido consecutivamente.
+
+Eventos de la interfáz
+    -abort -> ocurre cuando un elemento madre elimina a su hijos
+    -error -> ocurre cuando sucede un error durante la carga de un archivo multimedia
+    -load -> ocurre cuando un objeto se ha cargado
+    -beforeunload -> ocurre antes de que el documento esté a punto de descargarse
+    -unload -> ocurre una vez que se ha descargado una página
