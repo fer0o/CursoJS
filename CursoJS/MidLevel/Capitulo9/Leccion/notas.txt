@@ -4,7 +4,8 @@ Eventos
     -de Eventos o "Event Handlers"
     -Escucha de eventos "Event Listeners"
     -El objeto Event
-    -Flujo de eventos o "event flow" -> se ejecuta del mas especifico al menos especifico (los mas especificos son los hijos, los menos especificos son los contenedores)
+    -Flujo de eventos o "event flow" -> se ejecuta del mas especifico al menos especifico (los mas especificos son los hijos, los menos especificos son los contenedores) para cambiar el orden de ejecución se le da un tru al final de la función
+
     -Event Bubbling (por defecto) vs Event Capturing
     -event.stopPropagation()
 
@@ -23,7 +24,7 @@ Eventos Mouse
     -mouseup -> ocurre cuando un usuario suelta un botón del mouse sobre un elemento.
     -mousemove -> ocurre cuando el puntero se mueve mientras está sobre un elemento.
 
-Eventos de Teclao
+Eventos de Teclado
     -keypress -> ocurre cuando una tecla se presiona.
     -keydown -> ocurre cuando una tecla se deja de presionar
     -onkeyup -> ocurre despúes de que los dos eventos anteriores hayan concluido consecutivamente.
@@ -34,3 +35,4 @@ Eventos de la interfáz
     -load -> ocurre cuando un objeto se ha cargado
     -beforeunload -> ocurre antes de que el documento esté a punto de descargarse
     -unload -> ocurre una vez que se ha descargado una página
+    -resize -> ocurre cuando se cambia el tamño vista de un documento
