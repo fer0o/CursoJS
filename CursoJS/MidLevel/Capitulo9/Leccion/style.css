@@ -1,11 +1,3 @@
-.contenedor{
-    background-color: crimson;
-    padding: 50px;
-    margin-left: auto;
-    margin-right: auto;
-}
-.button{
-    background-color: black;
-    color: aquamarine;
-    
+.seleccionado{
+    color: crimson;
 }

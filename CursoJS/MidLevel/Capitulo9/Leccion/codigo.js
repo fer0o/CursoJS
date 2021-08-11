@@ -1,23 +1,9 @@
-const button = document.querySelector(".button");
-const contenedor = document.querySelector(".contenedor");
+const input = document.querySelector(".input-prueba")
+const contenedor = document.querySelector(".seleccionado")
 
-
-button.addEventListener('mouseout', (e)=>{
-    alert("di click en el boton")
-    console.log("boton")
-
-});
-/*
-contenedor.addEventListener("click", (e)=>{
-    alert("di click en el contenedor")
-    console.log("contenedor");
-},true)
-button.addEventListener("click", (e)=>{
-    alert("di click en el boton")
-    console.log("boton")
-
-});
-
-*/
-
-
+input.addEventListener("select", (e)=>{
+    let start = e.target.selectionStart;
+    let end = e.target.selectionEnd;
+    let textoComplet = input.value;
+    contenedor.textContent = console.log(textoComplet.substring(start,end));
+})

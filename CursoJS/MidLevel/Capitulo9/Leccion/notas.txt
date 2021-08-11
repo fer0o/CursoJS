@@ -30,9 +30,16 @@ Eventos de Teclado
     -onkeyup -> ocurre despúes de que los dos eventos anteriores hayan concluido consecutivamente.
 
 Eventos de la interfáz
-    -abort -> ocurre cuando un elemento madre elimina a su hijos
     -error -> ocurre cuando sucede un error durante la carga de un archivo multimedia
     -load -> ocurre cuando un objeto se ha cargado
     -beforeunload -> ocurre antes de que el documento esté a punto de descargarse
     -unload -> ocurre una vez que se ha descargado una página
     -resize -> ocurre cuando se cambia el tamño vista de un documento
+    -scroll -> ocurre cuando se desplaza la barra de desplazamiento de un elemento
+    -select -> ocurre después de que el usuario selecciona algún texto de <input> o <textarea>
+
+Timers (Temporizadores)
+    -setTimeout()
+    -setInterval()
+    -clearTimeout()
+    -clearInterval()
