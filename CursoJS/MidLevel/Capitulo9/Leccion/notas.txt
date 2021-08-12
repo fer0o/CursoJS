@@ -39,7 +39,10 @@ Eventos de la interfáz
     -select -> ocurre después de que el usuario selecciona algún texto de <input> o <textarea>
 
 Timers (Temporizadores)
-    -setTimeout()
-    -setInterval()
+    nos permite hacer trabajos con tiempo 
+    -setTimeout() estructura en js setTimeout(funcion{
+        lo que se desea ejemplo-> document.write("Hola")
+    },el tiempo en el que se desea en ms(2000))
+     -setInterval()
     -clearTimeout()
     -clearInterval()
