@@ -1,3 +1,7 @@
+body{
+    font-family: sans-serif;
+    background-color: beige;
+}
 .grid-container{
     display: grid;
     grid-template-rows: 50px;
@@ -6,7 +10,15 @@
 }
 .grid-container .grid-item{
     padding: 10px;
-    border: 1px solid #48e;
+    border: 2px solid #48e;
     margin: 5px;
+
+}
+.boton-confirmar{
+    padding: 15px 60px ;
+    background: #48e;
+    color: #fff;
+    border: 1px solid black;
+    margin: 40px;
 
 }
