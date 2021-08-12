@@ -1,0 +1,9 @@
+Los datos de Cofla y de otros alumnos fueron recibidos y ya están almacenados, ahora hay que crear un sistema que muestre esa información y se pueda asignar cuando rinde.
+
+Objetivo
+    La interfáz debe ser agradable y atractiva.
+    Debe contener todo los datos de maneta estructurada
+    El profesor puede serleccionar en cual de las 2 semanas rinde el usuario
+    Si el profesor confirma, los daros se deben actualizar y reemplazar el espacio de seleccion de semana por la semana seleccionada.
+
+    
