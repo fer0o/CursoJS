@@ -1,0 +1,31 @@
+Flujo del programa
+
+Control de Flujo y manejo de errores
+
+    Sentencia de bloques
+    Sentenciade control de flujo
+    Sentencias de manejo de excepciones
+
+
+Sentencia Switch
+
+    Sintaxis y clausula case
+    break
+    default
+
+excepcion y tipo de excepciones
+    Definicion y usos
+    Excepciones ECMAScript
+    DOMException y DOMError
+
+try...catch
+
+    Sintaxis
+    Objeto error
+    catch Incondicional
+    Catch condicional
+    Sentencia Throw
+    Finally
+
+
+Capitulo mas informativo, mejor para ejercicios

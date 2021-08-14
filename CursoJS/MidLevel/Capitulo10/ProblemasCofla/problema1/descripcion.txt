@@ -1,0 +1,8 @@
+Las mesas de examen ya finalizaron y el profesor le tomo un ultimo examen a Cofla,
+ya cofla hizo 2 pruebas mas, pero lamentablemente se rompio el sistema de inscripcion de notas, por ende habra que crear una solucion a este problema
+desarrollando una web que sea capas de simular su funcionamiento.
+
+Crar una mini interfaz para introducir notas
+validar que no haya errores
+se debe promediar la nora del profesor, con otras 2 notas de trabajos anteriores.
+Si el promedio es mayor a 7/10 aprobo la materia
