@@ -1,0 +1,43 @@
+Callbacks
+
+    -Concepto: una funcion dentro de otra funcion
+    funcion que pasamos como parametro otra funcion
+
+    -Ejemplos
+
+    -Problemas con los Callbacks
+
+
+
+Promesas 
+
+    Concepto: resolve y reject
+
+    Que puede representar
+        *terminacion de una operacion asincrona
+        *fracaso de una operacion asincrona
+
+
+con el nombre de la promesa.then() se accede al valor de la promesa 
+el Ejemplo
+let nombre = "pedro"
+
+const promesa = new Promise((resolve, reject)=>{
+    if(nombre !== "pedro") reject("el nombre no es pedro")
+    else resolve(nombre)
+})
+
+promesa.then()
+
+
+
+
+
+funciones asincronas:
+las promesas son asincronas
+
+se utiliza el await para mantener un orden como se muestran los datos, si un dato sale en un orden diferente al que esperamos
+el await internamente les dice que se esperen hasta que el orden sea el correcto
+
+
+
