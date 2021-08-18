@@ -1,0 +1,36 @@
+Peticiones HTTP -> es una peticion que mandamos a un servidor y nos devuelve una data
+
+
+Definicion
+Cliente y servidor
+
+No guardan informacion
+
+
+Ajax
+AXIOS
+Fetch
+
+
+Datos Estructurados (JSON)
+
+    -Definicion, Usos y Sintaxis
+    -Serializacion -> cadena de texto 
+    - y Deserializacion
+    -Metodo parse() -> convierte in string con estructura JSON a Formato JSON (Deserializar)
+    -Metodo stringify() -> Convierte un dato de Javascript en una cadena de texto JSON (serializar)
+    -JSON Polyfill 
+
+
+    necesitamos serializar datos para JSON si no es un error
+
+AJAX nativo
+    -Introduccion e instalacion del servidor
+    -Objeto XMLHTTRequest
+    -Enviar peticiones GET
+    -Trabajar el resultado de las peticiones
+    -Objeto ActiveXObject 
+    -Nueva forma de trabajar el resultado
+    -Enviar peticiones POST
+    -Objeto FromData
+    
