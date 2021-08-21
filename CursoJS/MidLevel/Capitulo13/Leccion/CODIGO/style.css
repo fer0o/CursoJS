@@ -1,0 +1,44 @@
+body{
+    color: #fff;
+    font-family: sans-serif;
+}
+
+#getName{
+    font-size: 10px;
+    margin: 20px;
+}
+#getLastName{
+    font-size: 10px;
+    margin: 20px;
+}
+#getAge{
+    font-size: 10px;
+    margin: 20px;
+}
+.nombre{
+    background: #000;
+    color: #fff;
+    font-size: 32px;
+    margin: 5px;
+    display: inline-block;
+    
+
+}
+.apellido{
+    background: #000;
+    color: #fff;
+    font-size: 32px;
+    margin: 5px;
+    display: inline-block;
+    
+    
+}
+.edad{
+    background: #000;
+    color: #fff;
+    font-size: 32px;
+    margin: 5px;
+    display: inline-block;
+    
+    
+}
